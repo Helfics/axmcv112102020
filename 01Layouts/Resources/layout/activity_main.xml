@@ -14,13 +14,18 @@
         android:id="@+id/textview_current"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
-  
-    <TextView
+
+    <ListView
+        android:id="@+id/listview_results"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"/>
+  <!--  <TextView
         android:text="Result"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:id="@+id/textview_result"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"/>-->
+
 
     <LinearLayout
         android:orientation="horizontal"
@@ -77,14 +82,14 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
 
-          <Button
+        <Button
             android:id="@+id/button7"
             android:text="7"
             android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
 
-          <Button
+        <Button
             android:id="@+id/button8"
             android:text="8"
             android:layout_weight="1"
@@ -112,14 +117,14 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
 
-          <Button
+        <Button
             android:id="@+id/buttonPlus"
             android:text="+"
             android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
 
-          <Button
+        <Button
             android:id="@+id/buttonEqual"
             android:text="="
             android:layout_weight="1"
