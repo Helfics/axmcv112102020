@@ -15,16 +15,34 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
-    <ListView
+    <!-- <ListView
         android:id="@+id/listview_results"
          android:layout_width="match_parent"
-         android:layout_height="wrap_content"/>
-  <!--  <TextView
-        android:text="Result"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:id="@+id/textview_result"
+         android:layout_height="wrap_content"/>-->
+
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>-->
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_weight="1"
+            android:text="Result"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textview_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/buttonHistory"
+            android:text="Historique"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
 
 
     <LinearLayout

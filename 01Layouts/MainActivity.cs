@@ -1,4 +1,5 @@
 ﻿using Android.App;
+using Android.Content;
 using Android.OS;
 using Android.Runtime;
 using Android.Support.V7.App;
@@ -24,16 +25,15 @@ namespace _01Layouts
         private Button btn0;
         private Button btnPlus;
         private Button btnEqual;
-        private ListView listviewResuts;
+        private Button btnHistory;
+        //private ListView listviewResuts;
         private TextView currentTextview;
-        //private TextView resultTextview;
+        private TextView resultTextview;
 
-        private List<string> dataResults;
+        public static List<string> DataResults = new List<string>();
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
-            dataResults = new List<string>();
-
             base.OnCreate(savedInstanceState);
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
@@ -52,13 +52,15 @@ namespace _01Layouts
             btn0 = FindViewById<Button>(Resource.Id.button0);
             btnPlus = FindViewById<Button>(Resource.Id.buttonPlus);
             btnEqual = FindViewById<Button>(Resource.Id.buttonEqual);
-            listviewResuts = FindViewById<ListView>(Resource.Id.listview_results);
+            btnHistory = FindViewById<Button>(Resource.Id.buttonHistory);
+
+            //listviewResuts = FindViewById<ListView>(Resource.Id.listview_results);
 
             currentTextview = FindViewById<TextView>(Resource.Id.textview_current);
             currentTextview.Text = string.Empty;
 
-            //resultTextview = FindViewById<TextView>(Resource.Id.textview_result);
-            //resultTextview.Text = string.Empty;
+            resultTextview = FindViewById<TextView>(Resource.Id.textview_result);
+            resultTextview.Text = string.Empty;
 
             btn1.Click += Btn_Click;
             btn2.Click += Btn_Click;
@@ -73,6 +75,14 @@ namespace _01Layouts
             btnPlus.Click += Btn_Click;
 
             btnEqual.Click += BtnEqual_Click;
+            btnHistory.Click += BtnHistory_Click;
+        }
+
+        private void BtnHistory_Click(object sender, EventArgs e)
+        {
+            var intent = new Intent(this, typeof(HistoryActivity));
+
+            StartActivity(intent);
         }
 
         private void BtnEqual_Click(object sender, EventArgs e)
@@ -93,9 +103,11 @@ namespace _01Layouts
                                               .Sum()
                                               .ToString();
 
-                dataResults.Insert(0, result);
+                DataResults.Insert(0, result);
 
-                listviewResuts.Adapter = new ArrayAdapter(this, Android.Resource.Layout.SimpleListItem1, dataResults);
+                resultTextview.Text = result;
+
+                //listviewResuts.Adapter = new ArrayAdapter(this, Android.Resource.Layout.SimpleListItem1, dataResults);
 
                 currentTextview.Text = string.Empty;
             }
