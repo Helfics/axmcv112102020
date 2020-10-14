@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{01BD3209-0BF2-4D66-B9CE-F668D88CB590}|Default">
+  <MonoDevelop.Ide.ItemProperties.02Lists PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.6CA3EB0C-AF48-4835-A221-5F076D1103BF" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="02Lists/Main.storyboard">
+    <Files>
+      <File FileName="02Lists/ViewController.cs" Line="25" Column="25" />
+      <File FileName="02Lists/Main.storyboard" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="axmcv112102020" expanded="True">
+            <Node name="02Lists" expanded="True">
+              <Node name="Main.storyboard" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.01Layouts FirstBuild="True" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
