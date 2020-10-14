@@ -1,27 +1,245 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772" />
-        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0" />
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ" />
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE" />
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736" />
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" />
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB" />
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sSa-wb-Yh9" fixedFrame="YES">
+                                <rect key="frame" x="236" y="386" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QsK-Sd-YwN" fixedFrame="YES">
+                                <rect key="frame" x="202" y="276" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1KO-2O-T5c" fixedFrame="YES">
+                                <rect key="frame" x="235" y="496" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="415" translatesAutoresizingMaskIntoConstraints="NO" text="labelResult">
+                                <rect key="frame" x="20" y="357.5" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="opaqueSeparatorColor" colorSpace="custom" customColorSpace="sRGB" red="0.776470588235294" green="0.776470588235294" blue="0.784313725490196" alpha="1"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="416" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="398" width="86" height="30"/>
+                                <state key="normal" title="1"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="417" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="116" y="398" width="86" height="30"/>
+                                <state key="normal" title="2"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="418" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="212" y="398" width="86" height="30"/>
+                                <state key="normal" title="3"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="419" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="308" y="398" width="86" height="30"/>
+                                <state key="normal" title="4"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="420" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="433" width="86" height="30"/>
+                                <state key="normal" title="5"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="421" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="116" y="433" width="86" height="30"/>
+                                <state key="normal" title="6"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="422" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="308" y="433" width="86" height="30"/>
+                                <state key="normal" title="8"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="423" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="212" y="433" width="86" height="30"/>
+                                <state key="normal" title="7"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="424" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="473" width="86" height="30"/>
+                                <state key="normal" title="9"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="425" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="116" y="473" width="86" height="30"/>
+                                <state key="normal" title="0"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="426" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="212" y="473" width="86" height="30"/>
+                                <state key="normal" title="+"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="427" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="308" y="473" width="86" height="30"/>
+                                <state key="normal" title="="/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="labelCurrent" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="618" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="51" width="374" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="1827" firstAttribute="height" constant="35"/>
+                                </constraints>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="922" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="58" y="112" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="923">
+                                        <rect key="frame" x="0.0" y="28" width="240" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="923" id="924">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="925" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="96" width="374" height="251.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="926" customClass="HistoryCell" reuseIdentifier="historycell">
+                                        <rect key="frame" x="0.0" y="28" width="374" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="926" id="927">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2210" translatesAutoresizingMaskIntoConstraints="NO">
+                                                    <rect key="frame" x="0.0" y="12" width="374" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" systemColor="opaqueSeparatorColor" colorSpace="custom" customColorSpace="sRGB" red="0.776470588235294" green="0.776470588235294" blue="0.784313725490196" alpha="1"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint id="2211" firstItem="2210" firstAttribute="leading" secondItem="927" secondAttribute="leading"/>
+                                                <constraint id="2212" firstAttribute="trailing" secondItem="2210" secondAttribute="trailing"/>
+                                                <constraint id="2213" firstItem="2210" firstAttribute="centerY" secondItem="927" secondAttribute="centerY"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="totalLabel" destination="2210" id="name-outlet-2210"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="2542" style="IBUITableViewCellStyleSubtitle" textLabel="2873" detailTextLabel="2874" reuseIdentifier="subtitlecell">
+                                        <rect key="frame" x="0.0" y="72" width="374" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2542" id="2543">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2873">
+                                                    <rect key="frame" x="15" y="5" width="33" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2874">
+                                                    <rect key="frame" x="15" y="25.5" width="44" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint id="428" firstAttribute="centerY" secondItem="421" secondAttribute="centerY"/>
+                            <constraint id="430" firstItem="420" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin"/>
+                            <constraint id="431" firstItem="421" firstAttribute="leading" secondItem="420" secondAttribute="trailing" constant="10"/>
+                            <constraint id="432" firstItem="423" firstAttribute="leading" secondItem="421" secondAttribute="trailing" constant="10"/>
+                            <constraint id="433" firstItem="422" firstAttribute="leading" secondItem="423" secondAttribute="trailing" constant="10"/>
+                            <constraint id="434" firstAttribute="trailingMargin" secondItem="422" secondAttribute="trailing"/>
+                            <constraint id="435" firstItem="420" firstAttribute="width" secondItem="421" secondAttribute="width"/>
+                            <constraint id="436" firstItem="421" firstAttribute="width" secondItem="423" secondAttribute="width"/>
+                            <constraint id="438" firstItem="421" firstAttribute="centerY" secondItem="420" secondAttribute="centerY"/>
+                            <constraint id="439" firstItem="421" firstAttribute="centerY" secondItem="423" secondAttribute="centerY"/>
+                            <constraint id="440" firstItem="423" firstAttribute="centerY" secondItem="422" secondAttribute="centerY"/>
+                            <constraint id="441" firstItem="423" firstAttribute="width" secondItem="422" secondAttribute="width"/>
+                            <constraint id="443" firstItem="421" firstAttribute="top" secondItem="417" secondAttribute="bottom" constant="5"/>
+                            <constraint id="444" firstItem="417" firstAttribute="leading" secondItem="416" secondAttribute="trailing" constant="10"/>
+                            <constraint id="445" firstItem="416" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin"/>
+                            <constraint id="446" firstItem="418" firstAttribute="leading" secondItem="417" secondAttribute="trailing" constant="10"/>
+                            <constraint id="447" firstItem="419" firstAttribute="leading" secondItem="418" secondAttribute="trailing" constant="10"/>
+                            <constraint id="448" firstAttribute="trailingMargin" secondItem="419" secondAttribute="trailing"/>
+                            <constraint id="449" firstItem="416" firstAttribute="width" secondItem="417" secondAttribute="width"/>
+                            <constraint id="450" firstItem="417" firstAttribute="width" secondItem="418" secondAttribute="width"/>
+                            <constraint id="451" firstItem="418" firstAttribute="width" secondItem="419" secondAttribute="width"/>
+                            <constraint id="452" firstItem="416" firstAttribute="centerY" secondItem="417" secondAttribute="centerY"/>
+                            <constraint id="453" firstItem="417" firstAttribute="centerY" secondItem="418" secondAttribute="centerY"/>
+                            <constraint id="455" firstItem="418" firstAttribute="centerY" secondItem="419" secondAttribute="centerY"/>
+                            <constraint id="456" firstItem="417" firstAttribute="top" secondItem="415" secondAttribute="bottom" constant="20"/>
+                            <constraint id="457" firstItem="415" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin"/>
+                            <constraint id="458" firstAttribute="trailingMargin" secondItem="415" secondAttribute="trailing"/>
+                            <constraint id="462" firstItem="425" firstAttribute="width" secondItem="424" secondAttribute="width"/>
+                            <constraint id="463" firstItem="426" firstAttribute="width" secondItem="424" secondAttribute="width"/>
+                            <constraint id="464" firstItem="427" firstAttribute="width" secondItem="424" secondAttribute="width"/>
+                            <constraint id="474" firstItem="425" firstAttribute="leading" secondItem="424" secondAttribute="trailing" constant="10"/>
+                            <constraint id="475" firstItem="426" firstAttribute="leading" secondItem="425" secondAttribute="trailing" constant="10"/>
+                            <constraint id="476" firstItem="427" firstAttribute="leading" secondItem="426" secondAttribute="trailing" constant="10"/>
+                            <constraint id="477" firstAttribute="trailingMargin" secondItem="427" secondAttribute="trailing"/>
+                            <constraint id="478" firstItem="424" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin"/>
+                            <constraint id="479" firstItem="425" firstAttribute="centerY" secondItem="424" secondAttribute="centerY"/>
+                            <constraint id="480" firstItem="425" firstAttribute="centerY" secondItem="426" secondAttribute="centerY"/>
+                            <constraint id="481" firstItem="425" firstAttribute="centerY" secondItem="427" secondAttribute="centerY"/>
+                            <constraint id="482" firstItem="425" firstAttribute="top" secondItem="421" secondAttribute="bottom" constant="10"/>
+                            <constraint id="928" firstItem="618" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="31"/>
+                            <constraint id="929" firstItem="618" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin"/>
+                            <constraint id="930" firstAttribute="trailingMargin" secondItem="618" secondAttribute="trailing"/>
+                            <constraint id="931" firstItem="925" firstAttribute="top" secondItem="618" secondAttribute="bottom" constant="10"/>
+                            <constraint id="932" firstItem="415" firstAttribute="top" secondItem="925" secondAttribute="bottom" constant="10"/>
+                            <constraint id="933" firstAttribute="trailingMargin" secondItem="925" secondAttribute="trailing"/>
+                            <constraint id="934" firstItem="925" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btn1" destination="416" id="name-outlet-416"/>
+                        <outlet property="btn2" destination="417" id="name-outlet-417"/>
+                        <outlet property="btn3" destination="418" id="name-outlet-418"/>
+                        <outlet property="btn4" destination="419" id="name-outlet-419"/>
+                        <outlet property="btn5" destination="420" id="name-outlet-420"/>
+                        <outlet property="btn6" destination="421" id="name-outlet-421"/>
+                        <outlet property="btn7" destination="423" id="name-outlet-423"/>
+                        <outlet property="btn8" destination="422" id="name-outlet-422"/>
+                        <outlet property="btn9" destination="424" id="name-outlet-424"/>
+                        <outlet property="btn0" destination="425" id="name-outlet-425"/>
+                        <outlet property="btnPlus" destination="426" id="name-outlet-426"/>
+                        <outlet property="btnEquals" destination="427" id="name-outlet-427"/>
+                        <outlet property="result" destination="415" id="name-outlet-415"/>
+                        <outlet property="current" destination="618" id="name-outlet-618"/>
+                        <outlet property="history" destination="925" id="name-outlet-925"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder" />
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="0.0" />
+            <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
     </scenes>
 </document>

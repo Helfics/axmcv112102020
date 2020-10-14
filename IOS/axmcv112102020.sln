@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02Lists", "02Lists\02Lists.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01Layouts", "01Layouts\01Layouts.csproj", "{715DFB0C-03B8-4A86-8096-63C0A6B5EA24}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03Navigation", "03Navigation\03Navigation.csproj", "{43EB5D6F-8D91-4481-9455-3BE243B958A1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|iPhoneSimulator = Debug|iPhoneSimulator
@@ -29,5 +31,13 @@ Global
 		{715DFB0C-03B8-4A86-8096-63C0A6B5EA24}.Debug|iPhone.Build.0 = Debug|iPhone
 		{715DFB0C-03B8-4A86-8096-63C0A6B5EA24}.Release|iPhone.ActiveCfg = Release|iPhone
 		{715DFB0C-03B8-4A86-8096-63C0A6B5EA24}.Release|iPhone.Build.0 = Release|iPhone
+		{43EB5D6F-8D91-4481-9455-3BE243B958A1}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{43EB5D6F-8D91-4481-9455-3BE243B958A1}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{43EB5D6F-8D91-4481-9455-3BE243B958A1}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{43EB5D6F-8D91-4481-9455-3BE243B958A1}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{43EB5D6F-8D91-4481-9455-3BE243B958A1}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{43EB5D6F-8D91-4481-9455-3BE243B958A1}.Debug|iPhone.Build.0 = Debug|iPhone
+		{43EB5D6F-8D91-4481-9455-3BE243B958A1}.Release|iPhone.ActiveCfg = Release|iPhone
+		{43EB5D6F-8D91-4481-9455-3BE243B958A1}.Release|iPhone.Build.0 = Release|iPhone
 	EndGlobalSection
 EndGlobal

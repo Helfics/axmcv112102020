@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="213">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="595" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="353" width="374" height="30"/>
+                                <state key="normal" title="Navigate"/>
+                                <connections>
+                                    <segue id="1104" destination="802" kind="show"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3049" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="383" width="374" height="30"/>
+                                <state key="normal" title="Navigate (Code)"/>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint id="796" firstItem="595" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin"/>
+                            <constraint id="797" firstAttribute="trailingMargin" secondItem="595" secondAttribute="trailing"/>
+                            <constraint id="798" firstAttribute="centerY" secondItem="595" secondAttribute="centerY"/>
+                            <constraint id="3050" firstItem="3049" firstAttribute="top" secondItem="595" secondAttribute="bottom"/>
+                            <constraint id="3051" firstItem="3049" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin"/>
+                            <constraint id="3052" firstAttribute="trailingMargin" secondItem="3049" secondAttribute="trailing"/>
+                        </constraints>
+                    </view>
+                    <navigationItem title="Title" id="592" key="navigationItem"/>
+                    <connections>
+                        <outlet property="navigateCodeButton" destination="3049" id="name-outlet-3049"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="593" y="-803"/>
+        </scene>
+        <scene sceneID="212">
+            <objects>
+                <navigationController id="213" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="215">
+                        <rect key="frame" x="0.0" y="20" width="414" height="50"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue id="593" destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="216" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5" y="-799"/>
+        </scene>
+        <scene sceneID="801">
+            <objects>
+                <viewController id="802" sceneMemberID="viewController" customClass="DetailViewController" storyboardIdentifier="DetailViewController" restorationIdentifier="DetailViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="799"/>
+                        <viewControllerLayoutGuide type="bottom" id="800"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="803">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1513" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="174" y="256" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1946" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="172" y="353" width="46" height="30"/>
+                                <state key="normal" title="Cancel"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2389" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="172" y="443" width="46" height="30"/>
+                                <state key="normal" title="Ok"/>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint id="1729" firstItem="1513" firstAttribute="leading" secondItem="803" secondAttribute="leadingMargin"/>
+                            <constraint id="1730" firstAttribute="trailingMargin" secondItem="1513" secondAttribute="trailing"/>
+                            <constraint id="1731" firstItem="1513" firstAttribute="top" secondItem="799" secondAttribute="bottom" constant="10"/>
+                            <constraint id="2164" firstItem="1946" firstAttribute="top" secondItem="1513" secondAttribute="bottom" constant="10"/>
+                            <constraint id="2165" firstItem="1946" firstAttribute="leading" secondItem="803" secondAttribute="leadingMargin"/>
+                            <constraint id="2166" firstAttribute="trailingMargin" secondItem="1946" secondAttribute="trailing"/>
+                            <constraint id="2390" firstItem="2389" firstAttribute="top" secondItem="1946" secondAttribute="bottom" constant="10"/>
+                            <constraint id="2391" firstItem="2389" firstAttribute="leading" secondItem="803" secondAttribute="leadingMargin"/>
+                            <constraint id="2392" firstAttribute="trailingMargin" secondItem="2389" secondAttribute="trailing"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="detailLabel" destination="1513" id="name-outlet-1513"/>
+                        <outlet property="cancelBtn" destination="1946" id="name-outlet-1946"/>
+                        <outlet property="okButton" destination="2389" id="name-outlet-2389"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="804" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1100" y="-806"/>
+        </scene>
+    </scenes>
+</document>

@@ -3,12 +3,12 @@
     <PropertyGroup>
         <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
         <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
-        <ProjectGuid>{715DFB0C-03B8-4A86-8096-63C0A6B5EA24}</ProjectGuid>
+        <ProjectGuid>{43EB5D6F-8D91-4481-9455-3BE243B958A1}</ProjectGuid>
         <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
         <TemplateGuid>{edc1b0fa-90cd-4038-8fad-98fe74adb368}</TemplateGuid>
         <OutputType>Exe</OutputType>
-        <RootNamespace>_01Layouts</RootNamespace>
-        <AssemblyName>_01Layouts</AssemblyName>
+        <RootNamespace>_03Navigation</RootNamespace>
+        <AssemblyName>_03Navigation</AssemblyName>
         <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
         <MtouchEnableSGenConc>true</MtouchEnableSGenConc>
         <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
@@ -133,9 +133,9 @@
         <Compile Include="ViewController.designer.cs">
             <DependentUpon>ViewController.cs</DependentUpon>
         </Compile>
-        <Compile Include="HistoryCell.cs" />
-        <Compile Include="HistoryCell.designer.cs">
-          <DependentUpon>HistoryCell.cs</DependentUpon>
+        <Compile Include="DetailViewController.cs" />
+        <Compile Include="DetailViewController.designer.cs">
+          <DependentUpon>DetailViewController.cs</DependentUpon>
         </Compile>
     </ItemGroup>
     <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
