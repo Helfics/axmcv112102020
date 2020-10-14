@@ -11,8 +11,19 @@ using UIKit;
 
 namespace _02Lists
 {
-    [Register("ViewController")]
+    [Register ("ViewController")]
     partial class ViewController
     {
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UITableView listview { get; set; }
+
+        void ReleaseDesignerOutlets ()
+        {
+            if (listview != null) {
+                listview.Dispose ();
+                listview = null;
+            }
+        }
     }
 }
