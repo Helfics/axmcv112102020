@@ -68,10 +68,6 @@ namespace _01Layouts
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UITableView history { get; set; }
-
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UILabel result { get; set; }
 
         void ReleaseDesignerOutlets ()
@@ -139,11 +135,6 @@ namespace _01Layouts
             if (current != null) {
                 current.Dispose ();
                 current = null;
-            }
-
-            if (history != null) {
-                history.Dispose ();
-                history = null;
             }
 
             if (result != null) {

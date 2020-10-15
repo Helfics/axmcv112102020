@@ -26,17 +26,17 @@ namespace _01Layouts
 
         public override UITableViewCell GetCell(UITableView tableView, NSIndexPath indexPath)
         {
-            //var cell = tableView.DequeueReusableCell(Key);
-            //cell.TextLabel.Text = data[indexPath.Row];
+            var cell = tableView.DequeueReusableCell(Key);
+            cell.TextLabel.Text = data[indexPath.Row];
 
             //var cell = tableView.DequeueReusableCell("historycell") as HistoryCell;
 
             //cell.Total = data[indexPath.Row];
 
-            var cell = tableView.DequeueReusableCell("subtitlecell");
+            //var cell = tableView.DequeueReusableCell("subtitlecell");
 
-            cell.TextLabel.Text = data[indexPath.Row];
-            cell.DetailTextLabel.Text = "Un sous texte";
+            //cell.TextLabel.Text = data[indexPath.Row];
+            //cell.DetailTextLabel.Text = "Un sous texte";
 
             return cell;
         }
@@ -44,7 +44,7 @@ namespace _01Layouts
 
     public partial class ViewController : UIViewController
     {
-        private List<string> dataResults;
+        public static List<string> dataResults = new List<string>();
 
         public ViewController(IntPtr handle) : base(handle)
         {
@@ -52,8 +52,6 @@ namespace _01Layouts
 
         public override void ViewDidLoad()
         {
-            dataResults = new List<string>();
-
             base.ViewDidLoad();
 
             current.Text = string.Empty;
@@ -73,8 +71,7 @@ namespace _01Layouts
 
             btnEquals.TouchUpInside += BtnEquals_TouchUpInside;
 
-            //history.RegisterClassForCellReuse(typeof(UITableViewCell),StringsSource.Key);
-            history.Source = new StringsSource(dataResults);
+         
         }
 
         private void Btn_TouchUpInside(object sender, EventArgs e)
@@ -103,11 +100,9 @@ namespace _01Layouts
                                               .Sum()
                                               .ToString();
 
-                //result.Text = sum;
+                result.Text = sum;
 
                 dataResults.Insert(0, sum);
-
-                history.ReloadData();
 
                 current.Text = string.Empty;
             }
