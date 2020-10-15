@@ -137,6 +137,10 @@
         <Compile Include="HistoryCell.designer.cs">
           <DependentUpon>HistoryCell.cs</DependentUpon>
         </Compile>
+        <Compile Include="HistoryViewController.cs" />
+        <Compile Include="HistoryViewController.designer.cs">
+          <DependentUpon>HistoryViewController.cs</DependentUpon>
+        </Compile>
     </ItemGroup>
     <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
